@@ -1,0 +1,27 @@
+/* .sr-dropdown {
+} */
+.sr-dropdown__head {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	align-items: center;
+	gap: 15px;
+}
+.sr-dropdown__head .sr-btn-icon {
+	padding: 4px;
+}
+.sr-dropdown__body {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+/* [data-dropdown-toggle="sr-active"] {
+	display: none;
+} */
+:not([data-dropdown-head="sr-active"]) + [data-dropdown-content] {
+	display: none;
+}

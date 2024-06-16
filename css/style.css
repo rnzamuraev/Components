@@ -1,0 +1,203 @@
+:root {
+	/*** Font ***/
+	--font-base: "Cera Pro", Arial, sans-serif;
+	--font-second: "Apoc LC", Arial, sans-serif;
+
+	/*** Color ***/
+	--black: #000000;
+	--dark: #2c2c33;
+	--gray: #c3c3c3;
+	--blue: #0033ff;
+	--red: #ff0000;
+	--white: #ffffff;
+
+	/*** Shadow ***/
+	/* --box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.10); */
+	/* --shadow-black: 0px 10px 10px -5px rgba(0, 0, 0, 0.04), 0px 20px 25px -5px rgba(0, 0, 0, 0.1); */
+	/* --shadow-dark: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(30, 41, 59, 0.4);
+	/* --shadow-secondary: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(100, 116, 139, 0.4); */
+	/* --shadow-primary: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(59, 130, 246, 0.4); */
+	/* --shadow-danger: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(239, 68, 68, 0.4); */
+	/* --shadow-success: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgb(34, 197, 94); */
+
+	/*** Gradient ***/
+	--text-gradient-welbex: linear-gradient(90deg, var(--white) 0%, var(--black) 100%);
+	--bg-gradient-dark: linear-gradient(195deg, var(--gray) 0%, var(--dark) 100%);
+	--bg-gradient-white: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 1) 50%,
+		rgba(255, 255, 255, 0) 100%
+	);
+
+	/*** Text ***/
+	--text-main-xl: 29px;
+	--text-main-md: 20px;
+	--text-xl: 20px;
+	--text-lg: 17px;
+	--text-md: 15px;
+	--text-sm: 13px;
+	--text-xs: 12px;
+
+	/*** Title ***/
+	--title-main-lg: 69px;
+	--title-main-md: 60px;
+	--title-main-sm: 40px;
+	--title-main-xs: 24px;
+	--title-lg: 20px;
+	--title-md: 15px;
+	--title-sm: 14px;
+	--title-xs: 12px;
+
+	/*** Font Weight ***/
+	--fw-xxl: 700;
+	--fw-xl: 600;
+	--fw-lg: 500;
+	--fw-md: 400;
+	--fw-sm: 300;
+	--fw-xs: 100;
+
+	/*** Line Height ***/
+	--lh-xl: 200%;
+	--lh-lg: 160%;
+	--lh-md: 120%;
+	--lh-sm: 100%;
+	--lh-xs: 80%;
+
+	/*** @Media ***/
+	--media-xxl: 1439px;
+	--media-xl: 1200px;
+	--media-lg: 992px;
+	--media-md: 768px;
+	--media-sm: 640px;
+	--media-xs: 480px;
+
+	/*** sr-container ***/
+	--sr-container-xxxl: 1380px;
+	--sr-container-xxl: 1140px;
+	--sr-container-xl: 940px;
+	--sr-container-lg: 720px;
+	--sr-container-md: 600px;
+	--sr-container-sm: 440px;
+	--sr-container-xs: 390px;
+
+	/*** Base ***/
+	--color-base: var(--white);
+	--bg-color-base: var(--black);
+	--text-family-base: var(--text-family);
+	--text-size-base: var(--text-sm);
+	--text-weight-base: var(--fw-md);
+	--text-line-height-base: var(--lh-sm);
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: var(--font-base);
+	font-size: var();
+	font-weight: var(--fw-md);
+	color: #2c2c33;
+}
+.sr-container {
+	margin: 0 auto;
+	max-width: 1380px;
+}
+@media (max-width: 1400px) {
+	.sr-container {
+		max-width: 1140px;
+	}
+}
+@media (max-width: 1200px) {
+	.sr-container {
+		max-width: 932px;
+	}
+}
+@media (max-width: 992px) {
+	.sr-container {
+		max-width: 718px;
+	}
+}
+@media (max-width: 768px) {
+	.sr-container {
+		padding: 0 20px;
+		max-width: 100%;
+	}
+}
+@media (max-width: 480px) {
+	.sr-container {
+		padding: 0 15px;
+	}
+}
+/** Button */
+.sr-btn {
+	margin: 0;
+	padding: 0;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-ms-flex-align: center;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	line-height: 110%;
+	color: var(--color-black);
+	/* background-color: transparent; */
+	border: none;
+	/* border-radius: 20px; */
+	transition: all 0.2s ease;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-appearance: none;
+	outline: none;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.sr-btn-icon {
+	padding: 0;
+	color: transparent;
+	background-color: inherit;
+	border-radius: 0;
+}
+/* .sr-btn-icon:hover {
+	opacity: 0.7;
+} */
+.sr-btn-icon:disabled {
+	opacity: 1;
+	cursor: default;
+	background-color: var(--color-grey-100) !important;
+}
+.sr-btn-icon:disabled img {
+	opacity: 0.2;
+}
+.sr-btn-icon-before {
+	position: relative;
+}
+.sr-btn-icon-before::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/** Buttons container */
+.sr-btns-wrap {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	/* gap: 15px; */
+}
